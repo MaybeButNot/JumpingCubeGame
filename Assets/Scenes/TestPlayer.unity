@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 120031219}
   - component: {fileID: 120031220}
   m_Layer: 0
-  m_Name: Player
+  m_Name: PlayerHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3cca6d3aad9c7845b478565764a5a83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 5
 --- !u!212 &120031217
 SpriteRenderer:
   m_ObjectHideFlags: 0

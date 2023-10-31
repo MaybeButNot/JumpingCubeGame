@@ -9,13 +9,21 @@ public class PlayerMovement : MonoBehaviour
 
     [NonSerialized] public bool isMoving;
 
-    private void FixedUpdate()
+    private Vector2 _movement;
+    private Rigidbody2D _rb;
+
+    private void Awake()
     {
-        InputSystem.onAnyButtonPress.CallOnce(ctrl => Debug.Log($"Button {ctrl} was pressed"));
+        _rb = GetComponent<Rigidbody2D>();
     }
 
-    private void Moving()
+    private void FixedUpdate()
     {
-           
+        _rb.MovePosition(_rb.position + _movement * Time.fixedDeltaTime);
+    }
+
+    private void Moving(InputValue value)
+    {
+        _movement = value.Get<Vector2>();
     }
 }
