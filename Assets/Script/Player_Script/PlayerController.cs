@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -5,7 +6,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public int speed;
     [SerializeField] public int jumpForce;
 
-    public Rigidbody2D rb;
+    [NonSerialized] public Rigidbody2D rb;
 
     private void Awake()
     {
