@@ -173,6 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   jumpForce: 25
+  rb: {fileID: 0}
 --- !u!212 &120031217
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1022,7 +1023,7 @@ GameObject:
   - component: {fileID: 1693449621}
   m_Layer: 7
   m_Name: WallLeft
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1288,7 +1289,7 @@ GameObject:
   - component: {fileID: 2104528116}
   m_Layer: 7
   m_Name: WallRight
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
