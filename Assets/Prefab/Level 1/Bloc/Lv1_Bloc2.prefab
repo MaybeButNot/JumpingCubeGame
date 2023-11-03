@@ -43,6 +43,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3705242280310251787}
+  - component: {fileID: 5634948869827695883}
   m_Layer: 0
   m_Name: Lv1_Bloc2
   m_TagString: Untagged
@@ -67,6 +68,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5634948869827695883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3705242280310251784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5290d2916868a4c86378534f4d93bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bloc: {fileID: 3705242280310251784}
+  _nextBlocList:
+  - {fileID: 3705242280310251784, guid: dd08e4f5d05c53b429a3cf846b8fa093, type: 3}
+  - {fileID: 3705242280310251784, guid: 1239718352f79c14cb5e1072dae7a271, type: 3}
+  - {fileID: 3705242280310251784, guid: c6bd5732742489c4d8e6cea0666523f5, type: 3}
 --- !u!1001 &39997948556795566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -244,7 +262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3744134278162992822, guid: cde8949702f42074e93e98a60ad037c3, type: 3}
       propertyPath: m_Name
-      value: Level1_Platform4High
+      value: Level1_Platform4HighRight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cde8949702f42074e93e98a60ad037c3, type: 3}
@@ -306,7 +324,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3744134278162992822, guid: cde8949702f42074e93e98a60ad037c3, type: 3}
       propertyPath: m_Name
-      value: Level1_Platform4Low
+      value: Level1_Platform4LowLeft
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cde8949702f42074e93e98a60ad037c3, type: 3}
